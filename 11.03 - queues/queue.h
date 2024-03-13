@@ -2,14 +2,15 @@
 #include <stdlib.h>
 #include <iostream>
 
-
+// A structure to represent an element(node) for the queue
 struct queue_el
 {
 	int n;
-	queue_el* next;
-	queue_el* prev;
+	queue_el* next = nullptr;
+	queue_el* prev = nullptr;
 };
 
+// A structure to represent a queue of elements
 struct queue_t
 {
 	queue_el* first = nullptr;
