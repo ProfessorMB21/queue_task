@@ -1,5 +1,7 @@
 #include "queue.h"
 
+using namespace std;
+
 void enqueue(queue_t& q, int num)
 {
 	auto* new_el = new queue_el;
@@ -37,3 +39,15 @@ bool dequeue(queue_t& q, int& num)
 	delete temp;
 	return true;
 }
+
+void print_queue(queue_t& q)
+{
+	auto* curr = q.first;
+	while (curr != NULL)
+	{
+		cout << curr->n << " ";
+		curr = curr->next;
+	}
+	cout << endl;
+}
+

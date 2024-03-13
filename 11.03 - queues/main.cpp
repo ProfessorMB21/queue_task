@@ -3,8 +3,6 @@
 
 using namespace std;
 
-void print_queue(queue_t &q);
-
 int main()
 {
 	queue_t small_nums;
@@ -24,15 +22,4 @@ int main()
 	clear(small_nums);
 	clear(big_nums);
 	return 0;
-}
-
-void print_queue(queue_t &q)
-{
-	auto* curr = q.first;
-	while (curr != NULL)
-	{
-		cout << curr->n << " ";
-		curr = curr->next;
-	}
-	cout << endl;
 }

@@ -20,3 +20,4 @@ struct queue_t
 void enqueue(queue_t& q, int num);
 void clear(queue_t& q);
 bool dequeue(queue_t& q, int& num);
+void print_queue(queue_t& q);
